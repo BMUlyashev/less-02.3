@@ -1,6 +1,6 @@
 package ru.skypro;
 
-public abstract class Transport implements ServiceStation {
+public abstract class Transport implements RepairWorks {
     private String modelName;
     private int wheelsCount;
 
