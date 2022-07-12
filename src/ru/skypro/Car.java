@@ -6,13 +6,19 @@ public class Car extends Transport {
     }
 
     @Override
-    public void checkEngine() {
+    public void check() {
+        System.out.println("Обслуживаем " + getModelName());
+        for (int i = 0; i < getWheelsCount(); i++) {
+            updateTyre();
+        }
+        checkEngine();
+    }
+
+    private void checkEngine() {
         System.out.println("Проверяем двигатель");
     }
 
-    @Override
-    public void checkTrailer() {
-
+    private void updateTyre() {
+        System.out.println("Меняем покрышку");
     }
-
 }
